@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="Base1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="840" minWidth="1080" prefHeight="840.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accesside.BASEUIController">
+    <bottom>
+      <AnchorPane prefHeight="0.0" prefWidth="1080.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="Revert" contentDisplay="CENTER" layoutX="490.0" text="Revert" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane fx:id="Footer" layoutX="42.0" layoutY="11.05078125" AnchorPane.bottomAnchor="1.0" AnchorPane.topAnchor="4.0">
+               <children>
+                  <Text fx:id="Webspace" layoutX="48.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WEbSpACE" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="55.99609375" AnchorPane.topAnchor="11.0" />
+                  <Text fx:id="Presentation" layoutX="48.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Presentation" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="11.0" />
+                  <Text fx:id="A" layoutX="18.0" layoutY="22.94921875" strokeType="OUTSIDE" strokeWidth="0.0" text="A" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="11.0" />
+               </children>
+            </AnchorPane>
+            <Separator prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+    
+    <top>
+      <AnchorPane fx:id="Header" prefHeight="30.0" prefWidth="1080.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="Close" layoutX="1030.0" text="X" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="Minimise" layoutX="984.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="Maximise" layoutX="933.0" layoutY="2.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </JFXButton>
+            <MenuBar fx:id="menuTray" layoutY="3.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+              <menus>
+                <Menu fx:id="File" mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="Open" mnemonicParsing="false" text="Open" />
+                        <MenuItem fx:id="Save" mnemonicParsing="false" text="Save" />
+                        <MenuItem fx:id="Exit" mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu fx:id="Format" mnemonicParsing="false" text="Format">
+                  <items>
+                    <MenuItem fx:id="Font" mnemonicParsing="false" text="Font" />
+                  </items>
+                </Menu>
+                <Menu fx:id="View" mnemonicParsing="false" text="View">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+                  <Menu fx:id="About" mnemonicParsing="false" text="AboutIDE">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <Separator layoutX="184.0" layoutY="31.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Separator>
+            <AnchorPane layoutX="399.0" layoutY="-86.0" prefHeight="33.0" prefWidth="149.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="775.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="-86.0" layoutY="-58.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="2.0">
+                     <image>
+                        <Image url="@Wlogo.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="34.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Revert IDE" AnchorPane.topAnchor="4.775390625">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Text>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <TextArea fx:id="Code" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </TextArea>
+   </center>
+   <left>
+      <AnchorPane fx:id="fileTray" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <Rectangle arcHeight="25.0" arcWidth="5.0" fill="#9a9a9a" height="34.0" layoutX="59.0" layoutY="44.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 100;" width="200.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Text fill="WHITE" layoutX="54.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current File">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="16.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane fx:id="LogoPane" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <VBox alignment="CENTER" layoutX="29.0" layoutY="119.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="102.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@theLogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+   </right>
+   
+</BorderPane>
